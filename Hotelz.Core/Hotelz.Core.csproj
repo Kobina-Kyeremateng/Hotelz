@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC11885E-AED9-404D-B444-C334057FA180}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hotelz.Core</RootNamespace>
+    <AssemblyName>Hotelz.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AprAttendances.cs" />
+    <Compile Include="AugAttendances.cs" />
+    <Compile Include="Bank.cs" />
+    <Compile Include="BankBranch.cs" />
+    <Compile Include="Branch.cs" />
+    <Compile Include="Commission.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="Currencies.cs" />
+    <Compile Include="DecAttendances.cs" />
+    <Compile Include="DeductionTypes.cs" />
+    <Compile Include="Department.cs" />
+    <Compile Include="Employees.cs" />
+    <Compile Include="EmploymentType.cs" />
+    <Compile Include="EntityState.cs" />
+    <Compile Include="FebAttendances.cs" />
+    <Compile Include="IAprAttendancesRepository.cs" />
+    <Compile Include="IAugAttendancesRepository.cs" />
+    <Compile Include="IBankBranchRepository.cs" />
+    <Compile Include="IBankRepository.cs" />
+    <Compile Include="IBaseEvents.cs" />
+    <Compile Include="IBranchRepository.cs" />
+    <Compile Include="ICommissionRepository.cs" />
+    <Compile Include="ICountryRepository.cs" />
+    <Compile Include="ICurrencyRepository.cs" />
+    <Compile Include="IDecAttendancesRepository.cs" />
+    <Compile Include="IDeductionTypesRepository.cs" />
+    <Compile Include="IDepartmentRepository.cs" />
+    <Compile Include="IEmployeesRepository.cs" />
+    <Compile Include="IEmploymentTypeRepository.cs" />
+    <Compile Include="IFebAttendancesRepository.cs" />
+    <Compile Include="IJanAttendancesRepository.cs" />
+    <Compile Include="IJobRepository.cs" />
+    <Compile Include="IJulAttendancesRepository.cs" />
+    <Compile Include="IJunAttendancesRepository.cs" />
+    <Compile Include="ILeaveRepository.cs" />
+    <Compile Include="ILeaveTypeRepository.cs" />
+    <Compile Include="IMarAttendancesRepository.cs" />
+    <Compile Include="IMayAttendancesRepository.cs" />
+    <Compile Include="INationalityRepository.cs" />
+    <Compile Include="INovAttendancesRepository.cs" />
+    <Compile Include="IOctAttendancesRepository.cs" />
+    <Compile Include="IOvertimeRepository.cs" />
+    <Compile Include="IQualificationRepository.cs" />
+    <Compile Include="IReligionRepository.cs" />
+    <Compile Include="IRoleRepository.cs" />
+    <Compile Include="ISalaryRepository.cs" />
+    <Compile Include="ISeptAttendancesRepository.cs" />
+    <Compile Include="ITaxRepository.cs" />
+    <Compile Include="JanAttendances.cs" />
+    <Compile Include="Job.cs" />
+    <Compile Include="JulAttendances.cs" />
+    <Compile Include="JunAttendances.cs" />
+    <Compile Include="Leave.cs" />
+    <Compile Include="LeaveType.cs" />
+    <Compile Include="MarAttendances.cs" />
+    <Compile Include="MayAttendances.cs" />
+    <Compile Include="Nationality.cs" />
+    <Compile Include="NovAttendances.cs" />
+    <Compile Include="OctAttendances.cs" />
+    <Compile Include="Overtime.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qualification.cs" />
+    <Compile Include="Religion.cs" />
+    <Compile Include="Roles.cs" />
+    <Compile Include="Salary.cs" />
+    <Compile Include="SeptAttendances.cs" />
+    <Compile Include="Tax.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
